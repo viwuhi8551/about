@@ -4,7 +4,7 @@ permalink: /
 ---
 
 <header>
-  <img src='{{ site.baseurl }}/assets/img/logo.svg' />
+  <img src='{{ site.baseurl }}/assets/img/home.svg' />
   <nav role='navigation'>
     <ul>
       <li><a href='{{ site.baseurl }}/videos'>Videos</a></li>
@@ -15,6 +15,69 @@ permalink: /
     </ul>
   </nav>
 </header>
+
+
+<section class="profile-card" style="max-width:420px;margin:2em auto;padding:2em 1.5em;background:#fff;border-radius:16px;box-shadow:0 2px 16px #eee;text-align:center;">
+  <img src="{{ site.baseurl }}/assets/img/avatar.jpeg" alt="頭像" style="width:96px;height:96px;border-radius:50%;object-fit:cover;margin-bottom:1em;">
+  <h1 style="margin:0 0 0.5em 0;font-size:2em;">吳文翔</h1>
+  <p style="color:#666;margin-bottom:1.2em;">
+    影片剪輯師｜動畫合成｜網站架設<br>
+    熱愛影像創作，歡迎合作與交流！
+  </p>
+  <!-- 社群連結 -->
+  <div style="margin-bottom:1.2em;">
+    <a href="https://line.me/ti/p/p_eZpYb1dC" target="_blank" style="margin:0 0.5em;">
+      <img src="{{ site.baseurl }}/assets/img/line.svg" alt="Line" style="width:28px;">
+    </a>
+    <a href="mailto:viwuhi@gmail.com" style="margin:0 0.5em;">
+      <img src="{{ site.baseurl }}/assets/img/mail.svg" alt="Email" style="width:28px;">
+    </a>
+    <a href="https://www.instagram.com/leegooo2022" target="_blank" style="margin:0 0.5em;">
+      <img src="{{ site.baseurl }}/assets/img/instagram.svg" alt="Instagram" style="width:28px;">
+    </a>
+    <a href="https://www.facebook.com/your_facebook" target="_blank" style="margin:0 0.5em;">
+      <img src="{{ site.baseurl }}/assets/img/fb.png" alt="Facebook" style="width:28px;">
+    </a>
+    <!-- 你可以根據需要增加更多icon -->
+  </div>
+  <div style="font-size:0.95em;color:#888;">
+    <div>LINE: lovelove19960920</div>
+    <div>Email: viwuhi@gmail.com</div>
+  </div>
+</section>
+
+<!-- 作品集區塊 -->
+<section style="max-width:900px;margin:2em auto;">
+  <h2 style="text-align:center;margin-bottom:1.5em;">作品集</h2>
+  <div style="display:flex;flex-wrap:wrap;gap:1.5em;justify-content:center;">
+    <!-- 作品卡片1 -->
+    <div style="background:#fff;border-radius:12px;box-shadow:0 2px 8px #eee;width:260px;padding:1em;">
+      <img src="https://img.youtube.com/vi/your_youtube_id/hqdefault.jpg" alt="作品縮圖" style="width:100%;border-radius:8px;">
+      <h3 style="margin:0.8em 0 0.3em 0;">作品標題1</h3>
+      <p style="color:#666;font-size:0.95em;">這裡是作品簡介，可以放影片、動畫、網站等說明。</p>
+      <a href="https://www.youtube.com/watch?v=your_youtube_id" target="_blank" style="color:#0077cc;">觀看影片</a>
+    </div>
+    <!-- 作品卡片2 -->
+    <div style="background:#fff;border-radius:12px;box-shadow:0 2px 8px #eee;width:260px;padding:1em;">
+      <img src="https://img.youtube.com/vi/your_youtube_id2/hqdefault.jpg" alt="作品縮圖" style="width:100%;border-radius:8px;">
+      <h3 style="margin:0.8em 0 0.3em 0;">作品標題2</h3>
+      <p style="color:#666;font-size:0.95em;">這裡是作品簡介，可以放影片、動畫、網站等說明。</p>
+      <a href="https://www.youtube.com/watch?v=your_youtube_id2" target="_blank" style="color:#0077cc;">觀看影片</a>
+    </div>
+    <!-- 你可以複製上面卡片，增加更多作品 -->
+  </div>
+</section>
+
+<!-- 其它自訂區塊（如自傳、經歷、技能等） -->
+<section style="max-width:700px;margin:2em auto 3em auto;">
+  <h2 style="text-align:center;margin-bottom:1em;">關於我</h2>
+  <p style="color:#444;line-height:1.8;">
+    我是劉其鑫，畢業於大葉大學傳播藝術學程，擁有豐富的影像剪輯、動畫合成、網站架設經驗。<br>
+    曾任職於多家新創公司，負責企劃、拍攝、剪輯、後製等一條龍服務，熟悉多種影像與網路平台操作。<br>
+    歡迎各類合作與交流，期待與你一起創造更多精彩作品！
+  </p>
+</section>
+
 
 <ul class='videos'>
   {% assign videos = site.videos | reverse %}
