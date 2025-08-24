@@ -13,3 +13,13 @@ nav li {
 
 nav, nav a { color: #EABABA; }
 nav a:hover { color: #FF4C4C; }
+
+
+body {
+  background: #fdf6ee; // 柔和米色
+  color: #333;
+}
+
+header, section, nav, .profile-card {
+  background: transparent;
+}
