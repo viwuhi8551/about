@@ -35,12 +35,34 @@
   border: 1px solid #929292;
 }
 
+.video-scroll-wrapper {
+  overflow-x: auto;
+  overflow-y: visible;
+  width: 100%;
+  padding-bottom: 1em;
+}
+
+.videos {
+  display: flex;
+  flex-wrap: nowrap; /* 不換行，橫向排列 */
+  gap: 1.5em;        /* 卡片間距 */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.videos > li {
+  flex: 0 0 auto;    /* 固定寬度，不縮放 */
+  width: 280px;      /* 或你想要的卡片寬度 */
+}
 
 .video-card {
   background: #fff;
   border-radius: 12px;
   box-shadow: 0 2px 8px #eee;
-  width: 260px;
   padding: 1em;
-  margin: 10px auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
